@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Koya Inomata - Profile</title>
+
+  <!-- Google Fonts（ネット接続されていれば自動で適用されます） -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- リセットに近いシンプル設定 ---------- */
+    body, h1, h2, p {
+      margin: 0;
+    }
+    img {
+      display: block;
+      vertical-align: middle;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    /* ---------- ページ全体 ---------- */
+    body {
+      font-family: 'Cabin', sans-serif;
+      color: #5e6c77;
+      background: #f0f2f5; /* 周りを少しグレーにしてカードっぽく */
+    }
+
+    /* ---------- 全体を囲う白いカード ---------- */
+    .main_section {
+      width: 980px;
+      background: #ffffff;
+      margin: 50px auto;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+    }
+
+    /* ---------- 上部のグラデーションエリア ---------- */
+    .top_section {
+      background-image: linear-gradient(45deg, #ff929e 0%, #ff9362 100%);
+      height: 500px;
+    }
+
+    .page_title {
+      text-align: center;
+      position: absolute;
+      top: calc(70px + 50px);           /* main_section の 50px 分を足した位置 */
+      left: calc(50% - 214px / 2);      /* 文字幅 214px を前提に中央寄せ（微調整はデベロッパーツールで） */
+      font-family: 'Alex Brush', cursive;
+      color: #ffffff;
+      font-size: 40px;
+    }
+
+    .main_img {
+      width: 200px;
+      height: 200px;
+      border-radius: 150px;
+      box-sizing: border-box;
+      border: 8px solid #ffffff;
+      position: absolute;
+      top: calc(250px - 100px + 50px);  /* 画像高さの半分 + 50px */
+      left: calc(50% - 100px);          /* 画像幅の半分 */
+    }
+
+    .my_name {
+      color: #ffffff;
+      font-size: 18px;
+      position: absolute;
+      top: calc(360px + 50px);
+      left: calc(50% - 60px);           /* だいたい中央（名前を変えたらここを微調整） */
+    }
+
+    .my_jobs {
+      color: #ffffff;
+      font-size: 14px;
+      position: absolute;
+      top: calc(380px + 50px);
+      left: calc(50% - 240px / 2);      /* ここも文字量次第で微調整 */
+    }
+
+    .button {
+      width: 200px;
+      background: #ffffff;
+      color: #ffb6a5;
+      text-align: center;
+      padding: 15px;
+      border-radius: 30px;
+
+      position: absolute;
+      top: calc(500px - 49px / 2 + 50px);
+      left: calc(50% - 230px / 2);
+
+      box-shadow: 0 5px 30px rgba(255, 147, 98, .5);
+    }
+
+    /* ---------- ABOUT セクション ---------- */
+    .about_section {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .about_title {
+      color: #ffb6a5;
+      margin-bottom: 15px;
+    }
+
+    .about_detail {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    /* ---------- CAREER（経歴）セクション ---------- */
+    .career_section {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 100px;
+    }
+
+    .career_title {
+      color: #ffb6a5;
+      margin-bottom: 15px;
+    }
+
+    .career_detail {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    /* ---------- MESSAGE セクション ---------- */
+    .message_section {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    .message_title {
+      color: #ffb6a5;
+      margin-bottom: 15px;
+    }
+
+    .message_img {
+      width: 150px;
+      height: 150px;
+      border-radius: 200px;
+      box-sizing: border-box;
+      border: 5px solid #ffffff;
+      box-shadow: 0 5px 30px rgba(116, 117, 127, 0.3);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .message_detail {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    /* ---------- フッター ---------- */
+    .footer_section {
+      background: #74757f;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main_section">
+
+    <!-- ===== TOP（タイトル＋アイコン＋肩書き＋ボタン） ===== -->
+    <div class="top_section">
+      <h1 class="page_title">My Profile Page</h1>
+
+      <!-- ★自分のプロフィール画像に変更済み -->
+      <!-- C:\Users\marus\Desktop\my-portfolio\image\profile.jpg に配置しておく -->
+      <img class="main_img" src="image/profile.jpg" alt="プロフィール画像">
+
+      <!-- ★名前 -->
+      <p class="my_name">猪俣　光矢</p>
+
+      <!-- ★肩書き（営業・技術マネージャー・メンバー向け） -->
+      <p class="my_jobs">ITインフラ・ゲーム制作に挑戦中の競馬好きなエンジニア</p>
+
+      <!-- ★リンク先は自分のX(Twitter)やGitHubなどに変更して使う -->
+      <a href="#" class="button">CONTACT / FOLLOW</a>
+    </div>
+
+    <!-- ===== ABOUT セクション ===== -->
+    <div class="about_section">
+      <h2 class="about_title">ABOUT</h2>
+      <p class="about_detail">
+        名前：猪俣　光矢（いのまた　こうや）<br>
+        趣味：ゲーム / 競馬 / 温泉めぐり<br>
+        居住地：神奈川県平塚市<br>
+        好きなゲーム：アトリエシリーズ / モンスターハンターシリーズ / ウマ娘 プリティーダービー...etc...<br>
+        好きな競走馬：キタサンブラック / ドウデュース / クロワデュノール / メジロマックイーン / サクラローレル ...etc...<br>
+        好きな食べ物：二郎系ラーメン / しゃぶしゃぶ / 唐揚げ<br>
+        技術的なこと：Unity・C/C++・Unreal Engine 5 で個人ゲーム制作の経験あり。<br>
+        資格：AWS Certified Cloud Practitioner 取得済<br>
+        Linux 環境：Ubuntu / AlmaLinux 9 での環境構築やサーバ操作を勉強中です。
+      </p>
+    </div>
+
+    <!-- ===== CAREER（経歴）セクション ===== -->
+    <div class="career_section">
+      <h2 class="career_title">CAREER</h2>
+      <p class="career_detail">
+        株式会社オープンアップ IT エンジニア<br>
+        作業期間：2024-04-01 ～ 2025-10-31<br>
+        業種：その他 / その他<br>
+        体制：1000名規模<br>
+        役割：メンバー<br>
+        作業範囲：運用／監視、運用／保守<br>
+        スキル：AWS / Linux / Windows / Windows Server<br>
+        <br>
+        2024/04/08 ～ 2025/06/30　大手通信会社様1<br>
+        ① 概要<br>
+        ネットワークおよびサービス基盤を対象に、24時間監視・障害対応を行う運用チームに所属。一次窓口オペレーターを統制しつつ、障害の初動対応・情報エスカレーションを担当。Zabbix 監視の最適化や手順書整備を推進し、サービス停止リスク低減に寄与。<br>
+        ② 主な担当業務<br>
+        ・障害・問い合わせ二次窓口<br>
+        ・初動対応：影響範囲確認、暫定回復、関係部署・ベンダー連携<br>
+        ・Zabbix 監視項目・閾値・通知フローの見直し（誤報低減／重要アラート優先化）<br>
+        ・オペレーター向け手順書・教育資料作成<br>
+        <br>
+        2025/06/30 ～ 2025/10/31　大手通信会社様2<br>
+        ① 概要<br>
+        Zabbix に関する問い合わせ対応、AlmaLinux 8 を用いた検証環境構築、AI ツールの試用を担当。<br>
+        ② 主な担当業務<br>
+        ・問い合わせ一次窓口<br>
+        ・検証環境作成（AlmaLinux 8）<br>
+        ・AI ツールの試用／レビュー会への参加<br>
+      </p>
+    </div>
+
+    <!-- ===== MESSAGE セクション ===== -->
+    <div class="message_section">
+      <h2 class="message_title">MESSAGE</h2>
+
+      <!-- 顔写真などがあればここに -->
+      <img class="message_img" src="image/profile.jpg" alt="メッセージ用プロフィール画像">
+
+      <p class="message_detail">
+        こんにちは、猪俣 光矢です。<br>
+        ゲームと競馬と温泉が大好きで、G1 開催日には関東開催であれば競馬場に足を運んでいます。<br>
+        最近は『ポケモンレジェンズ Z-A』にハマっています。<br>
+        Unity や Unreal Engine 5 を使ったゲーム制作や、Linux サーバ（Ubuntu / AlmaLinux 9）での自己研鑽を続けています。<br><br>
+
+        仕事では、インフラ・ネットワーク分野で蓄えてきたナレッジを土台にしながら、<br>
+        徐々に開発寄りの領域へシフトし、最終的にはゲームプログラマーとして、<br>
+        自分の好きなゲームの世界づくりに関わっていくことを目標にしています。<br><br>
+
+        このポートフォリオを通して、<br>
+        「どういう人柄で、何が好きで、どんな技術に挑戦しているのか」が、<br>
+        少しでも伝わればうれしいです。<br>
+      </p>
+    </div>
+
+    <!-- ===== フッター ===== -->
+    <footer class="footer_section">
+      <p>Produced by Koya Inomata</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
