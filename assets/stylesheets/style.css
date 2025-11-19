@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cabin:wght@400;500;700&display=swap");
+
+/* --------------------
+   ベースリセット
+--------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------
+   ページ全体（A4風カード）
+--------------------- */
+html {
+  background: #f5f6f8; /* 周囲の余白部分（グレー） */
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  color: #5e6c77;
+  width: 900px; /* A4 っぽい横幅（固定） */
+  margin: 40px auto; /* まわりの余白を均等に */
+  background: #ffffff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2); /* カード風の影 */
+}
+
+/* --------------------
+   テーブル共通
+--------------------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffb6a5;
+  padding: 8px 12px;
+}
+
+th {
+  text-align: right;
+  border-left: none;
+  white-space: nowrap;
+}
+
+td {
+  text-align: left;
+  border-right: none;
+}
+
+/* --------------------
+   テキスト基本
+--------------------- */
+p {
+  text-align: center;
+}
+
+/* --------------------
+   セクション共通
+--------------------- */
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+section > div {
+  max-width: 600px; /* 本文部分の最大幅 */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section h2 {
+  color: #ffb6a5;
+  margin-bottom: 30px;
+}
+
+/* --------------------
+   ヘッダー
+--------------------- */
+header {
+  background: linear-gradient(45deg, #ff929e 0%, #ff9362 100%);
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+header h1 {
+  font-family: "Alex Brush", cursive;
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* プロフィール画像・名前・部署 */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  box-sizing: border-box;
+  border: 8px solid #ffffff;
+  margin-top: 40px;
+  object-fit: cover;
+}
+
+.name {
+  margin-top: 5px;
+  font-size: 36px;
+}
+
+.department {
+  margin-top: 4px;
+}
+
+/* --------------------
+   BACKGROUND
+--------------------- */
+.background p {
+  text-align: justify; /* 両端揃えで読みやすく */
+}
+
+/* --------------------
+   ABOUT
+--------------------- */
+.about {
+  background: #ffeef4;
+}
+
+.about ul {
+  padding: 0;
+  margin: 0;
+}
+
+.about li {
+  list-style: none;
+}
+
+/* --------------------
+   SKILL
+--------------------- */
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.skills li {
+  display: inline-block;
+  margin: 5px 15px;
+  background: linear-gradient(45deg, #ff929e 0%, #ff9362 100%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* --------------------
+   WORKS
+--------------------- */
+.works {
+  background: #ffeef4;
+}
+
+.works p {
+  text-align: justify;
+}
+
+/* --------------------
+   CONTACT
+--------------------- */
+.contact a {
+  color: #ff6961;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* --------------------
+   フッター
+--------------------- */
+footer {
+  background: #74757f;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+}
