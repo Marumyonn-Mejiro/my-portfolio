@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
-    <!-- どの端末でも 900px 幅の紙として表示する -->
-    <meta name="viewport" content="width=900" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   </head>
   <body>
@@ -18,29 +17,19 @@
       <p class="name">猪俣 光矢</p>
       <p class="department">ITS関東1</p>
     </header>
-
     <main>
-      <!-- BACKGROUND セクション -->
       <section class="background">
         <div>
           <h2>BACKGROUND</h2>
           <p>
-            私は向上心・俯瞰力・分析力で課題を自走して改善へ結びつけるエンジニアです。<br>
-            Unity/C# の個人開発では、試作と検証を短期間で回すサイクルを構築し、<br>
-            操作感や負荷を数値で確認しながら素早く改良しています。<br>
-            以前配属されていた大手通信事業者の監視統制では、現場オペレーターと<br>
-            システム担当の橋渡し役として、障害対応フローと Zabbix アラートを整備し、<br>
-            平均初動時間の大幅な短縮に貢献しました。<br>
-            私生活でも Discord BOT を用いてサーバ内のログ収集とスパム検知を自動化し、<br>
-            物理サーバを0から構築して24時間稼働させています。<br>
-            AWS クラウドプラクティショナーで得た基礎知識を活かし、<br>
-            今後も課題の発見・分析・改善を粘り強くやり切る姿勢で価値を高めていきます。<br>
+            私は向上心・俯瞰力・分析力で課題を自走して改善へ結びつけるエンジニアです。<br />
+            Unity/C# の個人開発では、試作と検証を短期間で回すサイクルを構築し、操作感や負荷を数値で確認しながら素早く改良しています。<br />
+            以前配属されていた大手通信事業者の監視統制では、現場オペレーターとシステム担当の橋渡し役として、障害対応フローと Zabbix アラートの整備を行い、平均初動時間の大幅な短縮に貢献しました。<br />
+            私生活では Discord BOT を用いてサーバ内のログ収集とスパム検知を自動化し、物理サーバを 0 から構築して 24 時間稼働させています。<br />
+            AWS クラウドプラクティショナーで得た基礎知識も活かし、今後も課題の発見・分析・改善を粘り強くやり切る姿勢で価値を高めていきます。
           </p>
         </div>
       </section>
-
-
-      <!-- ABOUT セクション -->
       <section class="about">
         <div>
           <h2>ABOUT</h2>
@@ -48,6 +37,10 @@
             <tr>
               <th>名前</th>
               <td>猪俣 光矢（いのまた こうや）</td>
+            </tr>
+            <tr>
+              <th>部署</th>
+              <td>株式会社オープンアップ IT エンジニア</td>
             </tr>
             <tr>
               <th>趣味</th>
@@ -59,11 +52,17 @@
             </tr>
             <tr>
               <th>好きなゲーム</th>
-              <td>アトリエシリーズ / モンスターハンターシリーズ / ウマ娘 プリティーダービー ...etc...</td>
+              <td>
+                アトリエシリーズ / モンスターハンターシリーズ / ウマ娘
+                プリティーダービー ...etc...
+              </td>
             </tr>
             <tr>
               <th>好きな競走馬</th>
-              <td>キタサンブラック / ドウデュース / クロワデュノール / メジロマックイーン / サクラローレル ...etc...</td>
+              <td>
+                キタサンブラック / ドウデュース / クロワデュノール /
+                メジロマックイーン / サクラローレル ...etc...
+              </td>
             </tr>
             <tr>
               <th>好きな食べ物</th>
@@ -71,7 +70,9 @@
             </tr>
             <tr>
               <th>技術的なこと</th>
-              <td>Unity・C/C++・Unreal Engine 5 で個人ゲーム制作の経験あり</td>
+              <td>
+                Unity・C/C++・Unreal Engine 5 で個人ゲーム制作の経験あり
+              </td>
             </tr>
             <tr>
               <th>資格</th>
@@ -79,21 +80,20 @@
             </tr>
             <tr>
               <th>Linux 環境</th>
-              <td>Ubuntu / AlmaLinux 9 での環境構築やサーバ操作を勉強中です。</td>
+              <td>
+                Ubuntu / AlmaLinux 9 での環境構築やサーバ操作を勉強中
+              </td>
             </tr>
           </table>
         </div>
       </section>
-
-
-      <!-- SKILL セクション -->
       <section class="skills">
         <div>
-          <h2>SKILL</h2>
+          <h2>SKILLS</h2>
           <ul>
-            <li>C / C++</li>
+            <li>C/C++</li>
             <li>Unity</li>
-            <li>Unreal Engine</li>
+            <li>Unreal Engine 5</li>
             <li>Ubuntu</li>
             <li>AlmaLinux</li>
             <li>Zabbix</li>
@@ -101,42 +101,38 @@
           </ul>
         </div>
       </section>
-
-
-      <!-- WORKS セクション（表示は CAREER として使用） -->
-      <section class="WORKS">
+      <section class="works">
         <div>
-          <h2>CAREER</h2>
+          <h2>WORKS</h2>
           <p>
-            株式会社オープンアップ IT エンジニア<br>
-            作業期間：2024-04-01 ～ 2025-10-31<br>
-            業種：その他 / その他<br>
-            体制：1000名規模<br>
-            役割：メンバー<br>
-            作業範囲：運用／監視、運用／保守<br>
-            スキル：AWS / Linux / Windows / Windows Server<br>
-            <br>
-            2024/04/08 ～ 2025/06/30　大手通信会社様1<br>
-            ① 概要<br>
-            ネットワークおよびサービス基盤を対象に、24時間監視・障害対応を行う運用チームに所属。一次窓口オペレーターを統制しつつ、障害の初動対応・情報エスカレーションを担当。Zabbix 監視の最適化や手順書整備を推進し、サービス停止リスク低減に寄与。<br>
-            ② 主な担当業務<br>
-            ・障害・問い合わせ二次窓口<br>
-            ・初動対応：影響範囲確認、暫定回復、関係部署・ベンダー連携<br>
-            ・Zabbix 監視項目・閾値・通知フローの見直し（誤報低減／重要アラート優先化）<br>
-            ・オペレーター向け手順書・教育資料作成<br>
-            <br>
-            2025/06/30 ～ 2025/10/31　大手通信会社様2<br>
-            ① 概要<br>
-            Zabbix に関する問い合わせ対応、AlmaLinux 8 を用いた検証環境構築、AI ツールの試用を担当。<br>
-            ② 主な担当業務<br>
-            ・問い合わせ一次窓口<br>
-            ・検証環境作成（AlmaLinux 8）<br>
-            ・AI ツールの試用／レビュー会への参加<br>
+            株式会社オープンアップ IT エンジニア<br />
+            作業期間：2024-04-01 ～ 2025-10-31<br />
+            業種：その他 / その他<br />
+            体制：1000名規模<br />
+            役割：メンバー<br />
+            作業範囲：運用／監視、運用／保守<br />
+            スキル：AWS / Linux / Windows / Windows Server<br />
+            <br />
+            2024/04/08 ～ 2025/06/30　大手通信会社様1<br />
+            ① 概要<br />
+            ネットワークおよびサービス基盤を対象に、24時間監視・障害対応を行う運用チームに所属。一次窓口オペレーターを統制しつつ、障害の初動対応・情報エスカレーションを担当。Zabbix
+            監視の最適化や手順書整備を推進し、サービス停止リスク低減に寄与。<br />
+            ② 主な担当業務<br />
+            ・障害・問い合わせ二次窓口<br />
+            ・初動対応：影響範囲確認、暫定回復、関係部署・ベンダー連携<br />
+            ・Zabbix 監視項目・閾値・通知フローの見直し（誤報低減／重要アラート優先化）<br />
+            ・オペレーター向け手順書・教育資料作成<br />
+            <br />
+            2025/06/30 ～ 2025/10/31　大手通信会社様2<br />
+            ① 概要<br />
+            Zabbix に関する問い合わせ対応、AlmaLinux 8 を用いた検証環境構築、AI ツールの試用を担当。<br />
+            ② 主な担当業務<br />
+            ・問い合わせ一次窓口<br />
+            ・検証環境作成（AlmaLinux 8）<br />
+            ・AI ツールの試用／レビュー会への参加<br />
           </p>
         </div>
       </section>
-
-
       <section class="contact">
         <div>
           <h2>CONTACT</h2>
@@ -144,26 +140,19 @@
             <tr>
               <th>Email</th>
               <td>
-                <a href="mailto:k.inomata.dpf@si.witc.co.jp"
-                  >k.inomata.dpf@si.witc.co.jp</a
-                >
+                <a href="mailto:k.inomata.dpf@si.witc.co.jp">k.inomata.dpf@si.witc.co.jp</a>
               </td>
             </tr>
             <tr>
               <th>Garoon</th>
               <td>
-                <a
-                  href="https://witc-si.cybozu.com/users/k.inomata.dpf"
-                  target="_blank"
-                  >私のGaroonのページはこちらですわ</a
-                >
+                <a href="https://witc-si.cybozu.com/users/k.inomata.dpf" target="_blank">私のGaroonのページはこちらですわ</a>
               </td>
             </tr>
           </table>
         </div>
       </section>
     </main>
-
     <footer>
       <p>&copy; 2025 Koya Inomata</p>
     </footer>
